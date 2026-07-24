@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://auth.blackore.ai/.well-known/openid-configuration
+# Black Ore's platform authenticates against an Auth0 tenant at auth.blackore.ai.
+# The public marketing/app host blackore.ai serves no .well-known discovery surface;
+# the identity tenant serves standard OIDC + OAuth 2.0 authorization-server metadata.
+hosts:
+- host: https://blackore.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://auth.blackore.ai
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: black-ore-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: black-ore-oauth-authorization-server.json

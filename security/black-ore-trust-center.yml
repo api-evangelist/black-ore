@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+url: https://blackore.ai/security
+certifications:
+- SOC 2 Type II
+frameworks:
+- AICPA Trust Services Criteria (Security, Availability, Confidentiality)
+controls:
+- AES-256 encryption at rest
+- TLS 1.2+ in transit
+- U.S.-based data residency
+- Multi-tenant data separation with continuous monitoring
+- Role-based access controls and audit logging
+- Quarterly security reviews
+evidence:
+- source: https://blackore.ai/security
+  keywords: [soc 2 type ii, aicpa trust services criteria, encryption, audit logging]

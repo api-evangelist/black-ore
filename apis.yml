@@ -1,9 +1,27 @@
 aid: black-ore
 name: Black Ore
-description: 'Black Ore is a company surfaced as a portfolio company of general-catalyst and added to
-  the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Black Ore is an enterprise AI company building Tax Autopilot, an AI-native
+  platform that automates tax preparation and review for accounting firms and financial-services
+  professionals. Its models ingest source documents, then classify and extract data
+  using machine learning and computer vision, compute individual (1040) and pass-through
+  (1041/1065, K-1/K-3) returns, generate workpapers, and route results through CPA-supervised
+  quality review, pushing prepared data into existing tax software such as CCH Axcess,
+  Drake, Lacerte, ProSystem fx, and UltraTax. Founded in 2022 and backed by Andreessen
+  Horowitz, Oak HC/FT, Founders Fund, General Catalyst, and Khosla Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/black-ore/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68ecfebb353873d3847e78ca/69e8b6da93005a6e8ddf6ac0_open-graph-black-ore.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +30,51 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Tax
+- Accounting
+- Artificial Intelligence
+- Financial Services
+- Automation
+- Machine Learning
 apis: []
+common:
+- type: DomainSecurity
+  url: security/black-ore-domain-security.yml
+- type: Website
+  url: https://blackore.ai
+- type: Login
+  url: https://auth.blackore.ai/u/login/identifier
+- type: Pricing
+  url: https://blackore.ai/pricing
+- type: Blog
+  url: https://blackore.ai/news
+- type: Support
+  url: https://blackore.ai/schedule-a-call
+- type: Compliance
+  url: https://blackore.ai/security
+- type: TermsOfService
+  url: https://blackore.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://blackore.ai/privacy-policy
+- type: WellKnown
+  url: well-known/black-ore-well-known.yml
+- type: Authentication
+  url: authentication/black-ore-authentication.yml
+- type: Conformance
+  url: conformance/black-ore-conformance.yml
+- type: TrustCenter
+  url: security/black-ore-trust-center.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
